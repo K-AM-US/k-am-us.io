@@ -6,12 +6,12 @@ const AboutComponent = ({ img, title, data, side }) => {
   const imgOrder = side ? "order-last" : "";
 
   return (
-    <div className="grid grid-cols-2 gap-8 my-5 ">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-5 ">
       <Image
         src={img}
         width={350}
         height={350}
-        className={`rounded-3xl col-span-1 place-self-center ${imgOrder}`}
+        className={`rounded-3xl col-span-1 place-self-center md:${imgOrder}`}
         alt=""
       />
       <div className="place-self-center flex flex-col w-full">
